@@ -1,0 +1,166 @@
+/* General Layout */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  box-sizing: border-box;
+}
+
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #03045e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+  margin-top: 10px; /* Apply margin-top here */
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.logo-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.user-search {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.sidebar-nav {
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-nav li {
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav li:hover {
+  background-color: #00b4d8;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.admin-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00b4d8;
+}
+
+.admin-widgets {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.widget {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .admin-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1em;
+  }
+
+  .user-image {
+    width: 80px;
+    height: 80px;
+  }
+}
